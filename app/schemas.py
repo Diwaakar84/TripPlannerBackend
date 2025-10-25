@@ -5,9 +5,22 @@ class TripRequest(BaseModel):
     location: str
     days: int
 
-class DayPlan(BaseModel):
-    day: int
-    activities: List[str]
+class PlaceDetails(BaseModel): 
+    id: str
+    name: str
+    latitude: float
+    longitude: float
 
-class TripResponse(BaseModel):
-    trip_plan: List[DayPlan]
+class DayPlan(BaseModel):
+    id: str
+    day: int
+    summary: str
+    places: List[PlaceDetails]
+
+class PlanDetails(BaseModel):
+    id: str 
+    title: str
+    days: List[DayPlan]
+
+# class TripResponse(BaseModel):
+#     trip_plan: List[DayPlan]

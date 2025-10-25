@@ -7,8 +7,11 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(trip_router, prefix="/api/trips", tags=["Trips"])
+app.include_router(trip_router, prefix="/trips", tags=["Trips"])
 
 @app.get("/")
 def root():
     return {"message": "Trip Planner Backend is running 🚀"}
+
+# Run command
+# uvicorn app.main:app --reload
