@@ -14,4 +14,4 @@ def root():
     return {"message": "Trip Planner Backend is running 🚀"}
 
 # Run command
-# uvicorn app.main:app --reload
+# uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload

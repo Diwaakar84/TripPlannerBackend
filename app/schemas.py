@@ -19,6 +19,7 @@ class DayPlan(BaseModel):
 
 class PlanDetails(BaseModel):
     id: str 
+    start_date: str
     title: str
     days: List[DayPlan]
 
