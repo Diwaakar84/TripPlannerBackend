@@ -76,7 +76,8 @@ WEATHER_API_KEY=your_weather_api_key_here
 ---
 
 ## 🔮 Future Enhancements
-- 🪣 Caching for weather API responses
+- 🌏 Implement a location sharded database to cache weather API data
 - 💸 Budgeting
 - 📅 Customizable date options
+- ▶️ Improve accessibility with smoother onboarding
   
