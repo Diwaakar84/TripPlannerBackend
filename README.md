@@ -4,6 +4,8 @@ This is the backend service for the **AI-Powered Trip Planner** app.
 It provides intelligent trip itinerary generation based on location, duration, and real-time weather data.  
 Built with **FastAPI** for speed, scalability, and easy integration with modern AI APIs.
 
+[Link to Frontend](https://github.com/Diwaakar84/TripPlannerFrontend)
+
 ---
 
 ## 🧩 Features
