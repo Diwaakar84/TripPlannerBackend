@@ -1,3 +1,4 @@
+from app.database import engine, Base
 from fastapi import FastAPI
 from app.routes.trip_routes import router as trip_router
 
@@ -6,6 +7,9 @@ app = FastAPI(
     description="AI-powered trip planner backend",
     version="1.0.0"
 )
+
+# Initialize the DB
+Base.metadata.create_all(bind=engine)
 
 app.include_router(trip_router, prefix="/trips", tags=["Trips"])
 

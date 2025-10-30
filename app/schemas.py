@@ -22,6 +22,3 @@ class PlanDetails(BaseModel):
     start_date: str
     title: str
     days: List[DayPlan]
-
-# class TripResponse(BaseModel):
-#     trip_plan: List[DayPlan]
